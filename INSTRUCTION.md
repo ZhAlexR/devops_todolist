@@ -9,6 +9,7 @@
   ```bash
     docker run --name <container-name> -p 8080:8080 <app-name>:<tag-name>
   ```
+- ### access application on your browser via `http://127.0.0.1:8080/`
   
 ## if you are building it using image pulled from DockerHub:
 - ### pull image from [docker hub](https://hub.docker.com/r/olzhu95/todoapp/tags)
