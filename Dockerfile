@@ -1,6 +1,6 @@
 ARG PYTHON_VERSION=3.11
 
-FROM python:${PYTHON_VERSION}-slim AS build
+FROM python:${PYTHON_VERSION} AS build
 
 WORKDIR app/
 
@@ -12,7 +12,7 @@ COPY api/ api/
 COPY lists/ lists/
 COPY todolist/ todolist/
 
-FROM python:${PYTHON_VERSION}
+FROM python:${PYTHON_VERSION}-slim
 
 WORKDIR app/
 ENV PYTHONUNBUFFERED=1
