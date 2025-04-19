@@ -19,3 +19,4 @@
   ```bash
     docker run --name <container-name> -p 8080:8080 olzhu95/todoapp:1.0.0
   ```
+- ### access application on your browser via `http://127.0.0.1:8080/`
